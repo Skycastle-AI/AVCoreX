@@ -6,6 +6,7 @@ public class AVCoreX {
 
     static {
         System.loadLibrary("bootdemo");
+
     }
 
     public native String getString();
