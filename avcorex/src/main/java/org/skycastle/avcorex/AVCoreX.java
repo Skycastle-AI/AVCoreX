@@ -8,7 +8,11 @@ public class AVCoreX {
         System.loadLibrary("bootdemo");
     }
 
-    private native int initializeCodec(Surface surface, int width, int height);
+    public native String getString();
 
-    private native int decodeH264(byte[] data);
+    public native int showVideo(Surface surface);
+
+    public native int initializeCodec(Surface surface, int width, int height);
+
+    public native int decodeH264(byte[] data);
 }
